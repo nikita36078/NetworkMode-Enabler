@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_description">Simple module which adds 3G only option to the network modes setting </string>
+    <string name="app_name">NetworkMode Enabler</string>
+
+</resources>
