@@ -19,15 +19,17 @@ public class NetworkModeEnabler implements IXposedHookInitPackageResources
 		resparam.res.setReplacement("com.android.phone", "array", "enabled_networks_except_lte_values",
 									new String[]{"2", "0", "1"});
 		resparam.res.setReplacement("com.android.phone", "array", "enabled_networks_4g_choices",
-									new String[]{"4G/3G/2G", "3G only", "3G/2G", "2G"});
+									new String[]{"4G only", "4G/3G/2G", "3G only", "3G/2G", "2G"});
 		resparam.res.setReplacement("com.android.phone", "array", "enabled_networks_values",
-									new String[]{"9", "2", "0", "1"});
+									new String[]{"11", "9", "2", "0", "1"});
 		resparam.res.setReplacement("com.android.phone", "array", "enabled_networks_choices",
-									new String[]{"LTE/3G/2G", "3G only", "3G/2G", "2G"});
+									new String[]{"LTE only", "LTE/3G/2G", "3G only", "3G/2G", "2G"});
 		resparam.res.setReplacement("com.android.phone", "string", "network_wcdma_only", "3G only");
 		resparam.res.setReplacement("com.android.phone", "string", "network_wcdma_pref", "3G/2G");
-		resparam.res.setReplacement("com.android.phone", "string", "network_4g", "4G/3G/2G");
+		resparam.res.setReplacement("com.android.phone", "string", "network_4G", "4G/3G/2G");
 		resparam.res.setReplacement("com.android.phone", "string", "network_lte", "LTE/3G/2G");
+		resparam.res.setReplacement("com.android.phone", "string", "network_4G_only", "4G only");
+		resparam.res.setReplacement("com.android.phone", "string", "network_lte_only", "LTE only");
 	}
 
 }
