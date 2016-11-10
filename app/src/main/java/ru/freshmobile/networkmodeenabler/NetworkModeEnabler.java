@@ -31,8 +31,10 @@ public class NetworkModeEnabler implements IXposedHookInitPackageResources
 			resparam.res.setReplacement("com.android.phone", "string", "network_lte", "LTE/3G/2G");
 			resparam.res.setReplacement("com.android.phone", "string", "network_wcdma_only", "3G only");
 			resparam.res.setReplacement("com.android.phone", "string", "network_wcdma_pref", "3G/2G");
-			resparam.res.setReplacement("com.android.phone", "string", "network_4G_only", "4G only");
 			resparam.res.setReplacement("com.android.phone", "string", "network_lte_only", "LTE only");
+		}
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+			resparam.res.setReplacement("com.android.phone", "string", "network_4G_only", "4G only");
 		}
 	}
 
