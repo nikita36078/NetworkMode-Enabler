@@ -1,5 +1,5 @@
 # NetworkMode Enabler
-A simple Xposed module which adds "3G only" and "4G only" options to the network modes setting.
+A simple Xposed module which adds "3G only", "4G only", "4G/3G"(for compatible devices) options to the network modes setting.
 
 ### Links
 
