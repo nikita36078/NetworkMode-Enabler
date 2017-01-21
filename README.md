@@ -1,6 +1,9 @@
 # NetworkMode Enabler
 A simple Xposed module which adds "3G only", "4G only", "4G/3G"(for compatible devices) options to the network modes setting.
 
+<b>It supports CM/LineageOS 11-14.1.</b> The app also should work on AOSP and AOSP-based roms. 
+Tested on Samsung Galaxy S3 Neo, CM12.1.
+
 ### Links
 
 Support thread: http://forum.xda-developers.com/xposed/modules/networkmode-enabler-add-3g-option-to-t3492568
